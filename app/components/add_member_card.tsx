@@ -8,5 +8,5 @@ export const AddMemberCard = ({setShowAddMemberModal}: AddMemberCardProps) =>{
                     <button onClick={setShowAddMemberModal}>
                         <img src="./add_profile.png"></img>
                     </button>
-                </div>
+            </div>
 }

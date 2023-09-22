@@ -40,7 +40,7 @@ export default function LogInScreen() {
                     <button onClick={(e:any)=> console.log("clicked")}className="bg-blue-500 rounded-lg text-white py-2">Log In</button>
                 </form>
 
-                <p className="text-sm mt-4 text-center">Don't have an account? <span className="text-blue-500">Register here</span></p>
+                <p className="text-sm mt-4 text-center">Don&apos;t have an account? <span className="text-blue-500">Register here</span></p>
             </div>
         </div>
     </div>
