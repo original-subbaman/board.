@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+p, a{
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Montserrat', sans-serif;
+}
