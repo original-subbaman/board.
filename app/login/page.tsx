@@ -1,6 +1,5 @@
 "use client";
 
-import { signIn } from "next-auth/react";
 import "./styles.css";
 import { FormEventHandler, useState } from "react";
 import { userInfo } from "os";
@@ -10,11 +9,11 @@ export default function LogInScreen() {
   const router = useRouter();
   const handleSignIn: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-    const result = await signIn("credentials", {
+    /* const result = await signIn("credentials", {
       email: user.email,
       password: user.password,
       callbackUrl: "/",
-    });
+    }); */
   };
   return (
     <div className="flex flex-row w-screen h-screen">
@@ -49,7 +48,7 @@ export default function LogInScreen() {
           </div>
 
           <form
-            onSubmit={handleSignIn}
+            /* onSubmit={handleSignIn} */
             action="#"
             className="flex flex-col bg-white rounded-2xl p-6"
           >
@@ -78,7 +77,10 @@ export default function LogInScreen() {
             <a className="text-blue-500 text-sm my-4">Forgot Password?</a>
             <button
               className="bg-blue-500 rounded-lg text-white py-2"
-              type="submit"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/dashboard");
+              }}
             >
               Log In
             </button>
