@@ -20,7 +20,7 @@ export default function DashboardScreen() {
   };
 
   return (
-    <div className="flex bg-gray-100 w-full h-full md:p-2">
+    <div className="flex bg-gray-100 w-min md:w-full md:h-full md:p-2">
       {/* Side Menu */}
       <div
         className={`inset-y-0 left-0 
